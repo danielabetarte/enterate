@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500&display=swap');
+
+$font-stack: "Montserrat", sans-serif;
+$primary-color: #034e90;
+$secomdary-color: #3eb5e1;
+
+// reset
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: $font-stack;
+    background-color: $primary-color;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1{font-size: 3rem;}
+h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7rem;
+}
+
+a{text-decoration: none;}
+
+// clases
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.large{font-size: 1.25rem;}
+
+.btn{
+    display: inline-block;
+
+    font-size: 15px;
+    padding: 12px 4px ;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.btn-dark{
+    background: $secomdary-color;
+    border: none;
+    color: #fff;
+}
+
+.txt-secondary{
+    color: $secomdary-color;
+}
+
+// header-header
+
+#mainheader{
+    height: 100vh;
+    h1{
+        font-weight: 700;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+}
+
+// navbar
+
+#navbar{
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a{
+        color: #fff;
+    }
+    .logo{
+        float: left;
+        padding-top: 25px;
+        font-size: 25px;
+        height: 100px; 
+    }
+    ul{
+        list-style: none;
+        float: right;
+        text-transform: uppercase;
+        li{
+            float: left;
+            a{
+                display: block;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// showcase
+
+#showcase{
+    padding: 6px 0;
+    .showcase-row{
+        display: flex;
+            &-txt{
+                padding-right: 60px;
+                p:first-child{
+                    text-transform: uppercase;
+                }
+                p:nth-last-child(2){
+                   padding-top: 15px;
+                    padding-bottom: 20px;
+                }
+            }
+            &-img{
+                padding-left: 20px;
+            }
+    }
+}
+
+// services
+
+#services{
+    padding: 80px 0;
+    h2,
+    p.large{
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .services-row{
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        img{
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+        &-box{
+            padding: 20px;
+            h4,
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+// footer
+
+#mainfooter{
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 700px){
+  
+    // header-header
+    
+    #mainheader{
+        height: 100%;
+    }
+    
+    // navbar
+    
+    #navbar{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .logo{
+            float: none;
+            text-align: center;
+            padding-top: 20px;
+            height: 100%; 
+        }
+        ul{
+            float: none;
+            padding-left: 50px;
+            text-transform: uppercase;
+        }
+    }
+    
+    // showcase
+    
+    #showcase{
+        padding: 20px 0;
+        .showcase-row{
+            flex-wrap: wrap;
+                &-txt{
+                    padding-right: 0;
+                    text-align: center;
+                    padding-bottom: 40px;
+                }
+                &-img{
+                    padding-left: 0;
+                    img{
+                        // width: 100vh;
+                        width: 500px;
+                    }
+                }
+        }
+    }
+    
+    // services
+    
+    #services{
+        padding: 40px 0;
+        h2,
+        p.large{
+    
+            width: 100%;
+        }
+        .services-row{
+            flex-wrap: wrap;
+            padding-top: 0;
+            &-box{
+                padding: 10px;
+            }
+        }
+    }
+    
+    // footer
+    
+    #mainfooter{
+        text-align: center;
+        padding: 30px;
+    }
+    }
