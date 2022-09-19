@@ -7,55 +7,95 @@
     <script src="https://kit.fontawesome.com/768dbc0cf3.js" crossorigin="anonymous"></script>
     <meta name="description" content="prestamos servicios de vacunacion">
      <meta name="keywords" content="alerta, vacunate, vacunas, covid-19, covid, virus">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/styles.css">
-    <title>Document</title>
+    <title>Enterate - Servicios</title>
 </head>
 <body>
-    <header id="mainheader">
-        <nav id="navbar">
-          <div class="container">
-            <img class="logo" src="../images/tra.png" alt="">
-            <ul>
-              <li><a href="../index.html">inicio</a></li>
-              <li><a href="../pages/servicios.html">Servicios</a></li>
-              <li><a href="../pages/noticias.html">noticias</a></li>
-              <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ENTERATE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+          <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="showcase">
+    <div class="container">
+      <h1 class="display-1">Noticias <br> covid-19</h1>
+      <p class="large">Informate de lo que pasa en el mundo</p>
+    </div>
+  </div>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/servicios2.jpg" class="d-block w-100" alt="covid-19" height="520px">
           </div>
-        </nav>
-        <div id="showcase">
-          <div class="container">
-            <h1 class="display-1">Servicios <br> covid-19</h1>
-            <p class="large">informate de lo que pasa en el mundo</p>
+          <div class="carousel-item">
+            <img src="../images/servicios1.jpg" class="d-block w-100" alt="covid-19" height="520px">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/servicios3.jpg" class="d-block w-100" alt="covid-19" height="520px">
           </div>
         </div>
-      </header>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
       <div class="wrapper">
         <section class="servicios">
             <div class="titulo servicios">
-                <h2>CUIDA TU SALUD Y LA DE TU FAMILIA... VACUNATE!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ad accusantium velit optio officia id itaque! Ad distinctio vero 
-                    perspiciatis, sapiente cumque nisi aut, mollitia, laudantium libero facilis dicta tempore!</p>
+                <h3>CUIDA TU SALUD Y LA DE TU FAMILIA... VACUNATE!</h3>
+                <p>Existen ciertas medidas de prevención adicionales que pueden implementarse en cualquier nivel, pero los CDC recomiendan considerarlas especialmente en ciertas circunstancias o cuando el nivel de COVID-19 en la comunidad es medio o alto.</p>
             </div>
             <div class="tipo-servicios">
                 <div>
                 <i class="fa-solid fa-compass-drafting"></i>
                 <h3>ALERTA COVID</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil deleniti et dicta!</p>
+                <p>Es menos probable que se infecte por el COVID-19 durante actividades al aire libre porque las partículas del virus no se acumulan en el aire de los espacios abiertos tanto como lo hacen en espacios cerrados.</p>
                 </div>
             
                 <div>
                     <i class="fa-solid fa-globe"></i>
                 <h3>VACUNATE</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil deleniti et dicta!</p>
+                <p>Las vacunas contra el COVID-19 ayudan a su organismo a generar protección contra el virus que causa el COVID-19. Aunque las personas vacunadas a veces son infectadas por el virus que causa el COVID-19</p>
                 </div>
                 <div>
                     <i class="fa-solid fa-landmark"></i>
                 <h3>CUIDA TU SALUD</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil deleniti et dicta!</p>
+                <p>Si estuvo expuesto a alguien con COVID-19, es probable que haya sido infectado por el virus. Siga las recomendaciones de los CDC sobre lo que debe hacer si estuvo expuesto al virus. Esto incluye</p>
                 </div>
             </div>
         </section>
     </div>
+
+    <footer>
+      <section id="mainfooter">
+          <div class="container">
+              <p>creado por DanielaBetarte <br>CoderHouse</p>
+          </div>
+      </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
+  crossorigin="anonymous"></script>
 </body>
 </html>

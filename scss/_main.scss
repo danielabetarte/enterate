@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 $font-stack: "Montserrat", sans-serif;
 $primary-color: #034e90;
@@ -20,6 +21,14 @@ body{
     line-height: 1.6;
 }
 
+@mixin caja-flex ($principal, $cruzado, $wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+}
+
+
 h1{font-size: 3rem;}
 h2{
     font-size: 2.8rem;
@@ -36,6 +45,12 @@ p{
     font-size: 1rem;
     margin: 10px 0;
     line-height: 1.7rem;
+}
+
+.navbar-brand {
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+    
 }
 
 a{text-decoration: none;}
@@ -84,34 +99,10 @@ a{text-decoration: none;}
     }
 }
 
-// navbar
 
-#navbar{
-    overflow: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    a{
-        color: #fff;
-    }
-    .logo{
-        float: left;
-        padding-top: 25px;
-        font-size: 25px;
-        height: 100px; 
-    }
-    ul{
-        list-style: none;
-        float: right;
-        text-transform: uppercase;
-        li{
-            float: left;
-            a{
-                display: block;
-                padding: 20px;
-                text-align: center;
-            }
-        }
-    }
+.wrapper{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 // showcase

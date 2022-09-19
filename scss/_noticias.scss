@@ -6,20 +6,6 @@ $secondary-color: #29285A;
 $third-color: #F18C6B;
 $gray-color: #000000;
 
-// Reset
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// Main Styling
-// html,
-// body {
-//   font-family: $font-stack;
-//   line-height: 1.6;
-//   scroll-behavior: smooth;
-// }
 
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
@@ -87,39 +73,6 @@ a { text-decoration: none; }
   }
 } //End #mainheader
 
-/* Navbar */
-#navbar {
-  background: $primary-color;
-  color: #fff;
-  overflow: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  a {
-  color: #fff;
-  }  
-  .logo {
-    float: left;
-    padding-top: 5px;
-    font-size: 25px;
-    height: 100px;
-  }
-  ul {
-    list-style: none;
-    float: right;
-    li {
-      float: left;
-      .btn {
-        color: $primary-color;
-      }
-      a {
-        display: block;
-        padding: 20px;
-        text-align: center;
-      } //End #navbar ul li a
-    } //End #navbar ul li
-  } //End #navbar ul
-} //End #navbar
-
 /* Showcase */
 #showcase {
   background: $primary-color;
@@ -151,7 +104,7 @@ a { text-decoration: none; }
       padding: 30px;
       margin: 20px;
       background: $gray-color;
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      box-shadow: 2px 2px 2px 1px rgb(248, 240, 240);
       border-radius: 20px;
       img {
         height: 200px;
@@ -173,8 +126,10 @@ a { text-decoration: none; }
   padding: 50px 0;
   background: $gray-color;
   .about-row {
+    display: block;
     padding-top: 30px;
-    display: flex;
+    text-align: center;
+    
     &-box {
       padding: 20px;
       img {

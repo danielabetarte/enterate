@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,400&display=swap");
 .bod {
   background: #034e90;
   width: 100%;
@@ -161,7 +161,7 @@ a {
   text-decoration: none;
 }
 
-.btn, .btn-secundario, .btn-principal {
+.btn {
   display: inline-block;
   font-size: 15px;
   padding: 12px 40px;
@@ -272,6 +272,11 @@ p {
   line-height: 1.7rem;
 }
 
+.navbar-brand {
+  font-family: "Yeseva One", cursive;
+  font-size: 30px;
+}
+
 a {
   text-decoration: none;
 }
@@ -287,7 +292,7 @@ a {
   font-size: 1.25rem;
 }
 
-.btn, .btn-secundario, .btn-principal {
+.btn {
   display: inline-block;
   font-size: 15px;
   padding: 12px 4px;
@@ -317,32 +322,9 @@ a {
   text-transform: uppercase;
 }
 
-#navbar {
-  overflow: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#navbar a {
-  color: #fff;
-}
-#navbar .logo {
-  float: left;
-  padding-top: 25px;
-  font-size: 25px;
-  height: 100px;
-}
-#navbar ul {
-  list-style: none;
-  float: right;
-  text-transform: uppercase;
-}
-#navbar ul li {
-  float: left;
-}
-#navbar ul li a {
-  display: block;
-  padding: 20px;
-  text-align: center;
+.wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #showcase {
@@ -504,7 +486,7 @@ a {
   font-size: 5rem;
 }
 
-.btn, .btn-secundario, .btn-principal {
+.btn {
   display: inline-block;
   font-size: 15px;
   padding: 12px 23px;
@@ -536,39 +518,6 @@ a {
   font-weight: 200;
   padding-top: 60px;
   padding-bottom: 30px;
-}
-
-/* Navbar */
-#navbar {
-  background: #0011ff;
-  color: #fff;
-  overflow: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#navbar a {
-  color: #fff;
-}
-#navbar .logo {
-  float: left;
-  padding-top: 5px;
-  font-size: 25px;
-  height: 100px;
-}
-#navbar ul {
-  list-style: none;
-  float: right;
-}
-#navbar ul li {
-  float: left;
-}
-#navbar ul li .btn, #navbar ul li .btn-secundario, #navbar ul li .btn-principal {
-  color: #0011ff;
-}
-#navbar ul li a {
-  display: block;
-  padding: 20px;
-  text-align: center;
 }
 
 /* Showcase */
@@ -604,7 +553,7 @@ a {
   padding: 30px;
   margin: 20px;
   background: #000000;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 1px rgb(248, 240, 240);
   border-radius: 20px;
 }
 #services .services-row-box img {
@@ -625,8 +574,9 @@ a {
   background: #000000;
 }
 #about .about-row {
+  display: block;
   padding-top: 30px;
-  display: flex;
+  text-align: center;
 }
 #about .about-row-box {
   padding: 20px;
@@ -644,73 +594,54 @@ a {
   padding: 30px;
 }
 
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+.presentacion {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.presentacion .flex-item2 {
+  text-align: center;
+}
+.presentacion h1 {
+  margin-top: 0;
+  padding-right: 20px;
+}
+.presentacion p {
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+.servicios div {
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+}
+.servicios .tipo-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.servicios .tipo-servicios i {
+  font-size: 30px;
+}
+.servicios .tipo-servicios p {
+  text-align: center;
+  padding: 20px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  font-family: "Montserrat", sans-serif;
+#mainfooter {
+  background: #0011ff;
+  text-align: center;
+  padding: 30px;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-  color: rgb(134, 132, 132);
-}
-
-.titulo-servicios, .presentacion {
-  margin-bottom: 10%;
-}
-
-p {
-  font-size: 1.8rem;
-  color: rgb(134, 132, 132);
-}
-
-h2 {
-  font-size: 2.4rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-.btn, .btn-secundario, .btn-principal {
-  border: none;
-  border-radius: 2px;
-  padding: 0.7em 1.5em;
-  cursor: pointer;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.btn-principal {
-  color: white;
-  background-color: #6495ED;
-}
-
-.btn-secundario {
-  background-color: rgb(134, 132, 132);
-}
-
-.containers {
-  padding: 5rem;
-  height: 80%;
-  max-width: 1300px;
-  overflow: auto;
-  background-color: #c7f1fb;
+@media (max-width: 700px) {
+  .servicios div {
+    flex-direction: column;
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
